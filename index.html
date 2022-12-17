@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Personal Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="https://kit.fontawesome.com/a170b42337.js" crossorigin="anonymous"></script>
+
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav class="navbar">
+                    <img src="" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                 </nav>
+    
+                <div class="header-text">
+                    <h1>Sur<span>Vivor</span> </h1>
+                    <h2>What this means is that we exist to help protect our environment and do numbers of ways.</h2>
+                </div>
+            </div>
+            <a href="" class="btn">Learn more</a>
+        </div>
+
+        <div id="blog">
+            <div class="container">
+                <h1 class="title">Latest Articles</h1>
+                <h2 class="subhead">Breaking news from the<span> WILD</span></h2>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/deer.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/squirrel.jpg">
+                    </div>
+                    <div class="work">
+                        <img src="images/bird.jpg">
+                    </div>
+                </div>
+             </div>
+             <div class="notif">
+                <h1>Get notified</h1>
+             <form>
+                 <input type="email" name="email" placeholder="Your Email" required>
+                 <button type="submit" class="btn2">Submit</button>
+             </form>
+             </div>
+             
+
+        </div>
+
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                       
+                            <div class="social-icons">
+                                <a href="https://www.pinterest.ph/search/pins/?q=wildlife&rs=typed"><i class="fa-brands fa-pinterest"></i></i></a>
+                                <a href="https://www.facebook.com/jr.y.alcazaren/"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="https://www.instagram.com/jrlczrn/"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                    </div>
+                   
+                </div>
+             </div>
+             <div class="copyright">
+                <a href="https://www.nationalgeographic.com/animals" class="btn btn3">Articles</a>
+                <a href="" class="btn btn3">About Us</a>
+                <a href="" class="btn btn3">Learn More</a>
+            </div>
+        </div>
+
+        <script>
+
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks)
+                tablink.classList.remove("active-link");
+                for(tabcontent of tabcontents)
+                tabcontent.classList.remove("active-tab");
+
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+            
+        </script>
+    </body> 
+</html>
